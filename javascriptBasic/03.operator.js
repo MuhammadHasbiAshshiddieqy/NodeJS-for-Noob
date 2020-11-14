@@ -1,0 +1,9 @@
+console.log("3+2=", 3+2);
+console.log("3-2=", 3-2);
+console.log("3x2=", 3*2);
+console.log("3:2=", 3/2);
+console.log("3mod2=", 3%2);
+console.log("True AND True => ", true && true);
+console.log("True AND True (int) => ", true & true);
+console.log("True OR True => ", true || true);
+console.log("True OR True (int) => ", true | true);
