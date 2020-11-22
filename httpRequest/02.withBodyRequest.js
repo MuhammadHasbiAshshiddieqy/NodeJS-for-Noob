@@ -27,9 +27,17 @@ callback = function(response) {
 
   response.on('end', function () {
     console.log(str);
+
+    // get specific value
+    console.log("Book title in index 0 : ", JSON.parse(str)[0].title)
   });
 }
 
-var req = http.request(options, callback);
+const req = http.request(options, callback);
+
+req.on('error', e => {
+    console.error(e);
+});
+
 req.write(JSON.stringify(data));
 req.end();
